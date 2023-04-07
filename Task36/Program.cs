@@ -32,13 +32,12 @@ Console.WriteLine(string.Join(",", array));
 
 int SumOddPosition()
 {
-    int[] newArr = array;
     int count = 0;
     for (int i = 1; i < size; i ++ )
     {
         if (i % 2 != 0) 
         {
-            count += newArr[i];
+            count += array[i];
         }
     }
     return count;

@@ -27,21 +27,20 @@ int[] Array()
 int[] array = Array();
 Console.WriteLine(string.Join(",", array));
 
-int SumPositive()
+int SumEvenNumbers()
 {
-    int[] newArr = array;
     int count = 0;
     for (int i = 0; i < size; i ++ )
     {
-        if (newArr[i] % 2 == 0) 
+        if (array[i] % 2 == 0) 
         {
             count += 1;
         }
     }
     return count;
 }
-int sum = SumPositive();
-Console.Write($"Количество положительных чисел в массиве: {sum}");
+int sum = SumEvenNumbers();
+Console.Write($"Количество четных чисел в массиве: {sum}");
 
 
 

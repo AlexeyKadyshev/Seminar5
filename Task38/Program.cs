@@ -29,13 +29,12 @@ Console.WriteLine(string.Join(",", array));
 
 int MaxNum()
 {
-    int[] newArr = array;
-    int max = newArr[0];
+    int max = array[0];
     for (int i = 0; i < size; i ++ )
     {
-        if (newArr[i] > max) 
+        if (array[i] > max) 
         {
-            max = newArr[i];
+            max = array[i];
         }
     }
     return max;
@@ -43,13 +42,12 @@ int MaxNum()
 
 int MinNum()
 {
-    int[] newArr = array;
-    int min = newArr[0];
+    int min = array[0];
     for (int i = 0; i < size; i ++ )
     {
-        if (newArr[i] < min) 
+        if (array[i] < min) 
         {
-            min = newArr[i];
+            min = array[i];
         }
     }
     return min;
